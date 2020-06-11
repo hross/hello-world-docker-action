@@ -9,7 +9,7 @@ outputs:
   time: # id of output
     description: 'The time we greeted you'
 runs:
-  pre: 'setup.sh'
+  pre-entrypoint: 'setup.sh'
   using: 'docker'
   image: docker://docker/hross/kubernetes-workshop-app:latest #docker://docker/github-actions:v1 #'Dockerfile'
   args:
