@@ -10,6 +10,6 @@ outputs:
     description: 'The time we greeted you'
 runs:
   using: 'docker'
-  image: docker://docker/github-actions:v1 #'Dockerfile'
+  image: docker://docker/hross/kubernetes-workshop-app:latest #docker://docker/github-actions:v1 #'Dockerfile'
   args:
     - ${{ inputs.who-to-greet }}
